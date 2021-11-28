@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/brunosm16/api-node-tdd/issues"
   },
-  "homepage": "https://github.com/brunosm16/api-node-tdd#readme"
+  "homepage": "https://github.com/brunosm16/api-node-tdd#readme",
+  "devDependencies": {
+    "git-commit-msg-linter": "^3.2.8"
+  }
 }

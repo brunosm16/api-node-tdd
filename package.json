@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/brunosm16/api-node-tdd#readme",
   "devDependencies": {
-    "git-commit-msg-linter": "^3.2.8"
+    "@types/node": "^16.11.10",
+    "git-commit-msg-linter": "^3.2.8",
+    "typescript": "^4.5.2"
   }
 }

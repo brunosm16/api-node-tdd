@@ -5,6 +5,12 @@ interface SutTypes {
   sut: BcryptAdapter
 }
 
+jest.mock('bcrypt', () => ({
+  async hash (value: string, salt: number): Promise<string> {
+    return await new Promise((resolve) => resolve('hash'))
+  }
+}))
+
 const salt = 12
 
 const makeSut = (): SutTypes => {
@@ -25,12 +31,21 @@ describe('EncrypterAdapter', () => {
 
   test('Should throws if Bcrypt throws', async () => {
     const { sut } = makeSut()
-    jest.spyOn(bcrypt, 'hash').mockImplementationOnce(
-      // eslint-disable-next-line @typescript-eslint/no-misused-promises
-      async (): Promise<void> => await Promise.reject(new Error())
-    )
+    jest
+      .spyOn(bcrypt, 'hash')
+      .mockImplementationOnce(
+        // eslint-disable-next-line @typescript-eslint/no-misused-promises
+        async (): Promise<void> => await Promise.reject(new Error())
+      )
     const promise = sut.encrypt('any_value')
 
     await expect(promise).rejects.toThrow()
+  })
+
+  test('Should return a has on success', async () => {
+    const { sut } = makeSut()
+
+    const hash = await sut.encrypt('any_value')
+    expect(hash).toEqual('hash')
   })
 })

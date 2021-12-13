@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/brunosm16/api-node-tdd#readme",
   "devDependencies": {
-    "@shelf/jest-mongodb": "^2.1.1",
+    "@shelf/jest-mongodb": "^1.1.3",
     "@types/bcrypt": "^5.0.0",
     "@types/jest": "^27.0.3",
     "@types/mongodb": "^4.0.7",
@@ -44,7 +44,7 @@
   },
   "dependencies": {
     "bcrypt": "^5.0.1",
-    "mongodb": "^4.2.1",
+    "mongodb": "^3.5.1",
     "validator": "^13.7.0"
   }
 }

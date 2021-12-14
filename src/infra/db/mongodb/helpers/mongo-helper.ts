@@ -18,4 +18,16 @@ export abstract class MongoHelper {
   public static getCollection (name: string): Collection {
     return this.connection.db().collection(name)
   }
+
+  public static map (collection: any): any {
+    const { _id, ...collectionWithNoId } = collection
+
+    const convertedCollection = Object.assign(
+      {},
+      { id: _id },
+      collectionWithNoId
+    )
+
+    return convertedCollection
+  }
 }

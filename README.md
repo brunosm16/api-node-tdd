@@ -3,7 +3,7 @@ API feita durante o curso [NodeJs, Typescript, TDD, DDD, Clean Architecture e SO
 
 ## ☑️ API's feitas 
 
-	✅ [SignUp](requirements/signup.md)
+	✅ [SignUp](./requirements/signup.md)
 
 > 📦 Bibliotecas, Ferramentas, Frameworks e Linguagens 
 

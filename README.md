@@ -1,9 +1,11 @@
 # 📌 API Node TDD
-API feita durante o curso [NodeJs, Typescript, TDD, DDD, Clean Architecture e SOLID](https://www.udemy.com/course/tdd-com-mango/).  Essa API foi implementada seguindo os princípios de Clean Architeture e TDD.
+API feita durante o curso [NodeJs, Typescript, TDD, Clean Architecture e SOLID](https://www.udemy.com/course/tdd-com-mango/).  Essa API foi implementada seguindo os princípios de Clean Architeture e TDD.
 
 ## ☑️ API's feitas 
 
-1. ✔️[SignUp](./requirements/signup.md)
+1. ✔️ [SignUp](./requirements/signup.md)
+
+-------------
 
 > 📦 Bibliotecas, Ferramentas, Frameworks e Linguagens 
 

@@ -9,7 +9,7 @@
 4. ✅ Realiza a criptografia da senha(password) passada na requisição. E salva essa senha criptografada no Banco.
 5. ✅ Após a inserção do usuário no POST é retornado um código 200 tendo como o body o usuário inserido. 
 
-### 👍 Casos de Exceções 
+### 💣 Casos de Exceções 
 -----------------
 
 1. ✅ Retorna erro 404 se os valores passados na requisição (name, email, password, passwordConfirm) não forem fornecidos.
